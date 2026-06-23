@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Student Portal</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="report.html">Report</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<h1 style="text-align:center;">Contact Form</h1>
+
+<form style="text-align:center;" onsubmit="return check()">
+    <input id="name" placeholder="Name"><br><br>
+    <input id="email" placeholder="Email"><br><br>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+function check(){
+    let n = document.getElementById("name").value;
+    let e = document.getElementById("email").value;
+
+    if(n=="" || e==""){
+        alert("Fill all fields");
+        return false;
+    }
+}
+</script>
+
+</body>
+</html>
