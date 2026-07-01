@@ -1,28 +1,175 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="navbar">
-    <h2>Student Portal</h2>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="report.html">Report</a>
-    <a href="contact.html">Contact</a>
+    <h2>📊 Student Portal</h2>
+
+    <div>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="report.html">Report</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html">Logout</a>
+
+    </div>
+
 </div>
 
-<h1 style="text-align:center;">Dashboard</h1>
 
-<div style="text-align:center;">
-    <div class="card">Total Students: 100</div>
-    <div class="card">Average Marks: 75%</div>
-    <div class="card">Passed: 80</div>
+<div class="dashboard-container">
+
+<h1 style="text-align:center;">Student Dashboard</h1>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="Search Student..."
+onkeyup="searchStudent()">
+
 </div>
+
+
+<!-- Dashboard Cards -->
+
+<div class="features">
+
+<div class="card">
+
+<h3>Total Students</h3>
+
+<h2 id="students">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Teachers</h3>
+
+<h2 id="teachers">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Courses</h3>
+
+<h2 id="courses">0</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Attendance</h3>
+
+<h2 id="attendance">0%</h2>
+
+</div>
+
+</div>
+
+
+<!-- Student Table -->
+
+<table
+class="student-table"
+id="studentTable">
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Semester</th>
+
+</tr>
+
+<tr>
+
+<td>101</td>
+
+<td>Ali</td>
+
+<td>Computer Science</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>102</td>
+
+<td>Sara</td>
+
+<td>Software Engineering</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>103</td>
+
+<td>Ahmed</td>
+
+<td>Information Technology</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>104</td>
+
+<td>Ayesha</td>
+
+<td>Computer Science</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>105</td>
+
+<td>Zain</td>
+
+<td>Artificial Intelligence</td>
+
+<td>7</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,24 +17,58 @@
     <a href="contact.html">Contact</a>
 </div>
 
-<h1 style="text-align:center;">Contact Form</h1>
+<h1 style="text-align:center; margin-top:30px;">Contact Form</h1>
 
-<form style="text-align:center;" onsubmit="return check()">
-    <input id="name" placeholder="Name"><br><br>
-    <input id="email" placeholder="Email"><br><br>
+<form style="text-align:center; margin-top:30px;" onsubmit="return check()">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter Your Name"
+        required>
+    <br><br>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required>
+    <br><br>
+
     <button type="submit">Send</button>
+
 </form>
 
 <script>
-function check(){
-    let n = document.getElementById("name").value;
-    let e = document.getElementById("email").value;
 
-    if(n=="" || e==""){
-        alert("Fill all fields");
+function check(){
+
+    let n = document.getElementById("name").value.trim();
+    let e = document.getElementById("email").value.trim();
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(n==""){
+        alert("Please enter your name.");
         return false;
     }
+
+    if(e==""){
+        alert("Please enter your email.");
+        return false;
+    }
+
+    if(!emailPattern.test(e)){
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    alert("Message Sent Successfully!");
+
+    return false;
+
 }
+
 </script>
 
 </body>
