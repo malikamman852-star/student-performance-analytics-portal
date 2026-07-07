@@ -380,3 +380,205 @@ footer {
 }
 
 }
+.card{
+
+    transition:0.4s;
+    
+    }
+    
+    .card:hover{
+    
+    transform:translateY(-8px);
+    
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    
+    }
+    
+    button{
+    
+    padding:10px 20px;
+    
+    border:none;
+    
+    background:#1f4b99;
+    
+    color:white;
+    
+    border-radius:6px;
+    
+    cursor:pointer;
+    
+    margin:5px;
+    
+    }
+    
+    button:hover{
+    
+    background:#163d82;
+    
+    }
+    @media(max-width:768px){
+
+        .navbar{
+        
+        flex-direction:column;
+        
+        }
+        
+        .cards{
+        
+        flex-direction:column;
+        
+        align-items:center;
+        
+        }
+        
+        .card{
+        
+        width:90%;
+        
+        }
+        
+        input{
+        
+        width:90%;
+        
+        }
+        
+        }
+        /* Week 3 UI Enhancement */
+
+.login-box{
+
+    width:380px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+    margin-bottom:20px;
+    color:#1f4b99;
+
+}
+
+.login-box input{
+
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+.login-box input:focus{
+
+    border:2px solid #1f4b99;
+    outline:none;
+
+}
+
+.login-box button{
+
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border-radius:8px;
+
+}
+.cards{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    
+    }
+    
+    .cards .card{
+    
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    transition:.4s;
+    
+    }
+    
+    .cards .card h2{
+    
+    color:#1f4b99;
+    
+    }
+    
+    .cards .card:hover{
+    
+    transform:scale(1.05);
+    
+    }
+    body{
+
+        animation:fadeIn .8s;
+        
+        }
+        
+        @keyframes fadeIn{
+        
+        from{
+        
+        opacity:0;
+        
+        transform:translateY(20px);
+        
+        }
+        
+        to{
+        
+        opacity:1;
+        
+        transform:translateY(0);
+        
+        }
+        
+        }
+        body{
+
+            animation:fadeIn .8s;
+            
+            }
+            
+            @keyframes fadeIn{
+            
+            from{
+            
+            opacity:0;
+            
+            transform:translateY(20px);
+            
+            }
+            
+            to{
+            
+            opacity:1;
+            
+            transform:translateY(0);
+            
+            }
+            
+            }
+            .card{
+
+                background:white;
+                padding:20px;
+                border-radius:12px;
+                box-shadow:0 8px 20px rgba(0,0,0,.15);
+                
+                }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Performance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+
+<h2>📊 Student Portal</h2>
+
+<div>
+<a href="dashboard.html">Dashboard</a>
+<a href="profile.html">Profile</a>
+<a href="report.html">Report</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+<div class="container">
+
+<h1 style="text-align:center;">Student Performance</h1>
+
+<input
+type="text"
+id="search"
+placeholder="Search Student..."
+onkeyup="searchStudent()">
+<br><br>
+
+<button onclick="sortAZ()">Sort A-Z</button>
+
+<button onclick="sortMarks()">Highest Marks</button>
+
+<br><br>
+
+<div id="studentCards" class="cards"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
